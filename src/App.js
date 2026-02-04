@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+
+
+import { useState } from "react";
+import Sidebar from "./components/Sidebar";
+import Header from "./components/Header";
+import Dashboard from "./pages/Dashboard";           // fintech overview
+import SuperAdminTable from "./components/SuperAdminTable";
+import OrganizationTable from "./components/OrganizationTable"; 
 
 function App() {
+  const [activePage, setActivePage] = useState("Overview");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex h-screen overflow-hidden bg-bg-black text-text-white">
+      <Sidebar 
+        active={activePage} 
+        onItemClick={setActivePage} 
+      />
+
+      <div className="flex-1 flex flex-col overflow-hidden">
+        <Header name="Admin" />
+
+        <main className="flex-1 overflow-y-auto">
+          {activePage === "Overview" && <Dashboard />}
+          
+          {activePage === "Super Admin" && <SuperAdminTable />}
+          {activePage === "Organization" && <OrganizationTable />}
+          {activePage !== "Overview" && activePage !== "Super Admin" && (
+            <div className="flex items-center justify-center h-full text-text-muted text-xl">
+              Page under construction: {activePage}
+            </div>
+          )}
+        </main>
+      </div>
     </div>
   );
 }
