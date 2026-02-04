@@ -213,7 +213,7 @@ import { User, Mail, Phone, Building, Calendar, ShieldCheck } from "lucide-react
 const SAMPLE_ADMINS = [
   {
     id: 1,
-    super_admin_code: "OD-BLR-0001",
+    super_admin_code: "SUP-0001",
     name: "Test User One",
     email: "test1@example.com",
     phone: "8956235692",
@@ -224,7 +224,7 @@ const SAMPLE_ADMINS = [
   },
   {
     id: 2,
-    super_admin_code: "OD-DEL-0002",
+    super_admin_code: "SUP-0002",
     name: "Aarav Sharma",
     email: "aarav.sharma@org.in",
     phone: "9876543210",
@@ -235,7 +235,7 @@ const SAMPLE_ADMINS = [
   },
   {
     id: 3,
-    super_admin_code: "OD-MUM-0003",
+    super_admin_code: "SUP-0003",
     name: "Priya Patel",
     email: "priya.patel@fintech.com",
     phone: "8123456789",
@@ -246,7 +246,7 @@ const SAMPLE_ADMINS = [
   },
   {
     id: 4,
-    super_admin_code: "OD-HYD-0004",
+    super_admin_code: "SUP-0004",
     name: "Rahul Verma",
     email: "rahul.v@cloudnine.in",
     phone: "9988776655",

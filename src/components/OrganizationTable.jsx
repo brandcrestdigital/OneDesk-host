@@ -221,7 +221,7 @@ export default function OrganizationTable() {
   const sampleData = [
     {
       org_id: "550e8400-e29b-41d4-a716-446655440000",
-      org_code: "OD-BLR-0001",
+      org_code: "OR-BLR-0001",
       organization_name: "TechFlow Solutions",
       primary_admin_name: "Test User One",
       mobile: "8956235692",
@@ -229,7 +229,7 @@ export default function OrganizationTable() {
     },
     {
       org_id: "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
-      org_code: "OD-DEL-0002",
+      org_code: "OR-DEL-0002",
       organization_name: "DataVerse Corp",
       primary_admin_name: "Aarav Sharma",
       mobile: "9876543210",
@@ -237,7 +237,7 @@ export default function OrganizationTable() {
     },
     {
       org_id: "8f14e45f-9c3e-4f2a-8c1d-6b7e8f9a0b1c",
-      org_code: "OD-MUM-0003",
+      org_code: "OR-MUM-0003",
       organization_name: "FinSight Labs",
       primary_admin_name: "Priya Patel",
       mobile: "8123456789",
